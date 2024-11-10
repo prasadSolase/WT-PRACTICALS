@@ -1,0 +1,52 @@
+$git config --global user.name "xyz"
+$git config --global user.email "xyz@gmail.com"
+
+for checking cofiguration 
+$git config --list
+
+clone the remote repository to local repository as follows:
+
+$git clone https://github.com/xyz/xyz.git
+
+after cloning the remote repository, change the directory to local repository
+
+$cd xyz/
+$ls  :REDAME.md
+
+to add some additional file we use touch in ubuntu for empty files for example:
+
+$ touch hello.py 
+
+we create python files add some data using 
+
+$gedit hello.py  and save it..
+
+
+NOW check the status of the remote repository
+
+$git status
+
+we found that hello.py is untrackable file.
+for commit the file we use:
+
+$git add hello.py
+
+we add hello.py in commited path now commit the file using:
+
+$ git commit -m "My python "
+
+we successfully add hello.py and also commited the file, but our file is not shown in remote repository for that we 
+need to push the file to the remote repository.
+
+$git push origin main
+
+then terminal ask our user name and password but this method is not working from augsut 2021..
+
+so we need to use tokens to aunthentication to push the file to the remote repository
+
+$git remote set-url origin https://<token>@github.com/username/repository.git
+
+
+then now we can use any time .. $git push origin main
+
+main is a branch in the remote repository

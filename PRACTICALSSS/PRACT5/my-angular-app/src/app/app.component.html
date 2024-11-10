@@ -1,0 +1,12 @@
+<h1>{{title}}</h1>
+
+<input type="text" #name placeholder="Enter the name" name="name"><br>
+<input type="email" #email placeholder="Enter the Email" name="email"><br>
+<input type="password" #password placeholder="Enter the Password" name="Password"><br>
+<button (click)="getValue(name.value,email.value,password.value)">submit</button>
+
+
+<h1>DISPLAY DATA OF USER</h1>
+<p>Name:{{displayname}}</p><br>
+<p>Email:{{displayemail}}</p><br>
+<p>Password:{{displaypassword}}</p>

@@ -1,0 +1,34 @@
+install docker
+sudo apt install docker.io
+ 
+check docker --version
+pull the docker container
+docker pull python
+
+check image like: sudo docker images
+check container : sudo docker ps
+
+
+to run a container:
+docker run --name PY -it -d python
+
+to execute a container:
+docker exec -it PY <command>
+
+then perform the task as per the container
+
+
+
+*UBUNTU
+
+Docker installation Steps:-
+(1) Sudo apt get-update
+(2) Sudo apt install docker.io
+(3) sudo snap install docker
+Done
+Next steps for testing installation 
+(1) docker -- version 
+(2) sudo docker run hello-world
+(3) Sudo docker images
+(4) sudo docker ps -a
+sudo docker ps
